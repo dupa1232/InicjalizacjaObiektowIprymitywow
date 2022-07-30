@@ -52,7 +52,8 @@ public class GlownaArrays {
         studenty2[1] = new Student(2, "Zosia");
 
         for(Student studencik : studenty2) {
-            System.out.println(studencik);
+            System.out.println(studencik); /// takie odwołanie, bez obiektu z domyślnm konstruktorem, powoduje, że NPE nie leci, jednak drukuje w dwóch wcześniejszych
+            //obiektach (?)hashe, a trzeci jako "null" (czyli zgodnie z tym, co pisałem wyżej, jest zwracane dla typów obiektowych)
         }
         /*
         Zwraca:
